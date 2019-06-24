@@ -3,5 +3,5 @@ from __future__ import unicode_literals
 
 from django.shortcuts import render, HttpResponse
 
-def index(request):
-    return HttpResponse("Felicidades! Completaron la 2a evaluacion parcial")
+def home(request):
+    return render(request,'home.html')
